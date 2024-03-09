@@ -20,56 +20,51 @@
 
     <title>Frontend Mentor | Product preview card component</title>
   </head>
-  <body class="">
+  <body>
     <!-- Card container -->
     <main
-      class="min-h-screen bg-Cream flex flex-col justify-center items-center px-4 overflow-hidden"
+      class="min-h-screen bg-Cream flex flex-col justify-center items-center px-4 py-4"
     >
+      <!-- Card -->
       <div
-        class="bg-white rounded-lg flex flex-col md:flex-row lg:items-center md:w-11/12 lg:w-10/12 xl:w-1/2"
+        class="bg-white flex flex-col gap-2 rounded-ss-lg rounded-se-lg md:flex-row md:gap-3 md:w-10/12 md:items-center md:rounded-es-lg md:rounded-ss-lg lg:w-1/2"
       >
-        <!-- Card image -->
-        <div class="md:w-1/2">
-          <img
-            src="images/image-product-mobile.jpg"
-            alt="perfume"
-            class="rounded-ss-lg rounded-se-lg md:hidden"
-          />
-          <img
-            src="images/image-product-desktop.jpg"
-            alt=""
-            class="hidden rounded-ss-lg rounded-es-lg md:block"
-          />
-        </div>
+        <!-- Card Images -->
+        <img
+          src="images/image-product-mobile.jpg"
+          class="h-auto object-cover md:hidden rounded-ss-lg rounded-se-lg"
+          alt="product-image"
+        />
+        <img
+          src="images/image-product-desktop.jpg"
+          class="hidden md:rounded-es-lg md:rounded-ss-lg md:block md:w-1/2 lg:w-1/2"
+          alt="product-image"
+        />
 
-        <!-- Right hand section -->
-        <div
-          class="px-6 py-6 flex flex-col space-y-5 md:w-1/2 md:px-7 md:space-y-7"
-        >
-          <p
-            class="text-DarkGrayishBlue text-base font-normal font-Montserrat uppercase tracking-widest"
+        <div class="flex flex-col px-4 py-6 gap-3">
+          <h3
+            class="uppercase text-DarkGrayishBlue font-medium font-Montserrat tracking-widest"
           >
-            Perfume
-          </p>
-          <h1 class="text-VeryDarkBlue font-Fraunces text-4xl font-bold">
+            perfume
+          </h3>
+          <h3 class="text-VeryDarkBlue font-extrabold text-3xl font-Fraunces">
             Gabrielle Essence Eau De Parfum
-          </h1>
-
-          <p class="text-DarkGrayishBlue text-base font-normal font-Montserrat">
+          </h3>
+          <p class="text-DarkGrayishBlue text-sm font-medium font-Montserrat">
             A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
+            Polge, Perfumer-Creator for the House of CHANEL
           </p>
-
-          <div class="flex space-x-3 items-center">
-            <p class="text-DarkCyan text-3xl font-Fraunces font-extrabold">
+          <div class="flex flex-row gap-3 items-center py-2">
+            <p class="text-DarkCyan text-3xl font-extrabold font-Fraunces">
               $149.99
             </p>
-            <p class="text-DarkGrayishBlue font-light line-through">$169.99</p>
+            <p
+              class="text-DarkGrayishBlue font-Montserrat line-through text-sm font-medium"
+            >
+              $169.99
+            </p>
           </div>
-
-          <button
-            class="bg-DarkCyan text-white font-bold text-lg rounded-lg px-4 py-4 hover:bg-DarkCyan"
-          >
+          <button class="bg-DarkCyan rounded-md font-bold py-3 text-white">
             Add to Cart
           </button>
         </div>
